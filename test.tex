@@ -1,0 +1,52 @@
+\documentclass[autodetect-engine, ja=standard, 10.5pt, a4paper]{bxjsarticle}
+%-------------------------------------------------------%
+
+% 数式
+\usepackage{amsmath} % align環境
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{nccmath}
+
+% 画像
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{here} %画像の表示位置調整用
+
+% 表設定
+\usepackage{multirow}   % 表の行の結合
+
+%その他のpackage
+\usepackage{float}
+\usepackage{titlesec}
+\usepackage{comment}    % 複数行コメント
+\usepackage{enumerate} %番号振り当て
+
+\newcommand{\tablenameref}[1]{\textbf{表\ref{#1}}}  % 表の参照を定義
+\newcommand{\reftable}[1]{表\ref{#1}}  % 「表 1」の形式で参照
+\newcommand{\reffig}[1]{図\ref{#1}}    % 「図 1」の形式で参照
+\newcommand{\alignref}[1]{\textbf{式(\ref{#1})}}    % 数式参照
+\renewcommand{\refeq}[1]{\eqref{#1}式} % 「(1) 式」の形式で参照
+\renewcommand{\tablename}{\textbf{表}}   % 表キャプション
+
+%-------------------------------------------------------%
+
+\pagestyle{plain}
+
+%-------------------------------------------------------%
+
+%セクション・サブセクションの見出しのサイズ
+\titleformat*{\section}{\Large\bfseries} %サイズ・太字
+\titleformat*{\subsection}{\large\bfseries}
+
+%-------------------------------------------------------%
+
+
+
+\title{テスト}
+\author{C1TB5058\:高橋和真}
+\date{\today}
+\begin{document}
+\maketitle
+ためしに公開してみる。
+\end{document}
